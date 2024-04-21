@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 import Contact from "../Contact/Contact";
 import css from "./ContactList.module.css";
 
-export default function ContactList({ users, onDelite }) {
+export default function ContactList({ users, onDelete }) {
     return (
         <ul className={css.usersList}>
             {users.map((user) => (
                 <li key={user.id}  className={css.usersItem}>
-                    <Contact user={user} onDelite={onDelite} />
+                    <Contact user={user} onDelite={onDelete} />
                 </li>
             ))}
         </ul>
@@ -16,5 +16,5 @@ export default function ContactList({ users, onDelite }) {
 
 ContactList.propTypes = {
     users: PropTypes.array.isRequired,
-    onDelite: PropTypes.func.isRequired
+    onDelete: PropTypes.func.isRequired
 };

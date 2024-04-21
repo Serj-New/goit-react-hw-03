@@ -7,7 +7,7 @@ export default function Contact({
         id,
         name,
         number
-    }, onDelite
+    }, onDelete
 }) {
     return (
         <div className={css.userInfo}>
@@ -15,7 +15,7 @@ export default function Contact({
                 <p className={css.name}>{name}</p>
                 <p className={css.number}>{number}</p>
             </div>
-            <button className={css.btnContact} onClick={() => onDelite(id)} >Delite</button>
+            <button className={css.btnContact} onClick={() => onDelete(id)} >Delete</button>
         </div>
     );
 }

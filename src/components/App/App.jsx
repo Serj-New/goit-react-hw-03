@@ -26,7 +26,7 @@ export default function App() {
         user.name.toLowerCase().includes(inputValue.toLowerCase())
     );
 
-    const deliteUser = (userId) => {
+    const deleteUser = (userId) => {
         setUsers((prevUsers) => prevUsers.filter((user) => user.id !== userId));
     };
 
@@ -37,7 +37,7 @@ export default function App() {
                 <ContactForm onAdd={addUser} />
                 <SearchBox value={inputValue} onSearch={setInputValue} />
             </div>
-            <ContactList users={filterUsers} onDelite={deliteUser} />
+            <ContactList users={filterUsers} onDelete={deleteUser} />
         </div>
     );
 }
