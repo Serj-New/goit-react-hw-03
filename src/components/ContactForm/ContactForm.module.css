@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.formWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnAdd {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.error {
+    color: red;
+}

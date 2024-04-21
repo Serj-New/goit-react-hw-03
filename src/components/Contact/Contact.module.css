@@ -1,0 +1,56 @@
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.btnContact {
+    height: 30px;
+}
+
+.userWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.name {
+    position: relative;
+    padding-left: 25px;
+}
+
+.name::before { 
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url(../../assets/user.svg); 
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.number {
+    position: relative;
+    padding-left: 25px;
+}
+
+.number::before { 
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url(../../assets/phone.svg); 
+    background-size: cover;
+    margin-right: 10px;
+}

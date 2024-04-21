@@ -1,0 +1,12 @@
+.usersList {
+    padding-left: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.usersItem:not(:last-child) {
+    margin-bottom: 10px;
+}
