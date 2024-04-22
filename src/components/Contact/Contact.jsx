@@ -22,4 +22,5 @@ export default function Contact({
 
 Contact.propTypes = {
     user: PropTypes.object,
+    onDelete: PropTypes.func.isRequired
 };

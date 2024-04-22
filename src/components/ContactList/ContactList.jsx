@@ -7,7 +7,7 @@ export default function ContactList({ users, onDelete }) {
         <ul className={css.usersList}>
             {users.map((user) => (
                 <li key={user.id}  className={css.usersItem}>
-                    <Contact user={user} onDelite={onDelete} />
+                    <Contact user={user} onDelete={onDelete} />
                 </li>
             ))}
         </ul>
